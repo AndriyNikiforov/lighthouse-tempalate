@@ -28,7 +28,7 @@ describe('example', () => {
   });
 
   test('accessibility', () => {
-    expect(report.accessibility.score).toBeGreaterThanOrEqual(0.8);
+    expect(report.accessibility.score).toBeGreaterThanOrEqual(0.9);
   });
 
   test('seo', () => {
