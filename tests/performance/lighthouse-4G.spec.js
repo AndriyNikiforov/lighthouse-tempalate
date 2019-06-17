@@ -1,17 +1,7 @@
+const opts = require('../config');
 const launchChromeAndRunLighthouse = require('../utilities/helpers');
 
 const url = 'https://google.com';
-const opts = {
-  lighthouseConfig: {
-    extends: 'lighthouse:default',
-  },
-  disableNetworkThrottling: true,
-  disableStorageReset: true,
-  emulatedFormFactor: 'mobile',
-  throttlingMethod: 'provided',
-  connection: 'fourg',
-};
-
 let data;
 
 describe('4G performance audit via Lighthouse', () => {
