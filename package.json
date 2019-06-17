@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "test:lighthouse": "jest performance --verbose --runInBand"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.5.0",
+    "lighthouse": "^5.0.0",
+    "puppeteer": "^1.13.0"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
