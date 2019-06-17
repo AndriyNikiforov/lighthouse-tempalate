@@ -2,10 +2,11 @@ const opts = require('../config');
 const launchChromeAndRunLighthouse = require('../utilities/helpers');
 
 const url = 'https://google.com';
+
 let data;
 let report;
 
-describe('4G performance audit via Lighthouse', () => {
+describe('example', () => {
   beforeAll(async () => {
     const result = await launchChromeAndRunLighthouse(url, opts,
       opts.lighthouseConfig);
@@ -32,5 +33,13 @@ describe('4G performance audit via Lighthouse', () => {
 
   test('seo', () => {
     expect(report.seo.score).toBeGreaterThanOrEqual(0.9);
+  });
+
+  test('best-practices', () => {
+    expect(report['best-practices'].score).toBeGreaterThanOrEqual(0.9);
+  });
+
+  test('performance', () => {
+    expect(report.performance.score).toBeGreaterThanOrEqual(0.9);
   });
 });
