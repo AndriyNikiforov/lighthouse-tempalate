@@ -6,5 +6,4 @@ module.exports = {
   disableStorageReset: true,
   emulatedFormFactor: 'mobile',
   throttlingMethod: 'provided',
-  connection: 'fourg',
 };
