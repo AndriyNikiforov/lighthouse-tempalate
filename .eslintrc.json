@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "google"],
+  "extends": ["eslint:recommended", "airbnb"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"

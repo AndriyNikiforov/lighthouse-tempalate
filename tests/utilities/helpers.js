@@ -11,12 +11,24 @@ async function launchChromeAndRunLighthouse(url, opts, config) {
       '--enable-tcp-fast-open',
       '--prerender',
       '--fast',
+      '--fast-start',
       '--browser-test',
+      '--aggressive-cache-discard',
+      '--disable-cache',
+      '--disable-icon-ntp',
+      '--disable-file-system',
+      '--disable-default-apps',
+      '--disable-gpu-watchdog',
+      '--dom-automation',
+      '--disable-bookmark-reordering',
+      '--prerender',
+      '--disable-zero-copy'
     ],
   });
 
   const page = await browser.newPage();
 
+  await page.setViewport({ width: 1380, height: 780 });
   await page.goto(url);
 
   opts.port = (new URL(browser.wsEndpoint())).port;
