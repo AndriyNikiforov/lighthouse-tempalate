@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "airbnb"],
+  "extends": ["eslint:recommended"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
@@ -12,7 +12,8 @@
   },
   "plugins": [
     "html",
-    "jest"
+    "jest",
+    "jsx-a11y"
   ],
   "rules": {
     "max-len": ["error", {

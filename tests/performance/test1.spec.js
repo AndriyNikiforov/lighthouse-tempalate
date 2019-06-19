@@ -13,7 +13,7 @@ describe('test1', () => {
 
     data = result.lhr;
     report = result.lhr.categories;
-  }, 45000);
+  }, 40000);
 
   test('first contentful paint should score 90+', () => {
     expect(data.audits['first-contentful-paint'].score)
